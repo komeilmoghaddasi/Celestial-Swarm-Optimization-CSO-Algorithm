@@ -1,0 +1,34 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 # General simulation settings\
+simulation:\
+  num_devices: 100   # Number of IoT devices\
+  tasks_per_device: 5  # Number of tasks per IoT device\
+  task_size_range: [500, 5000]  # Task size in KB (min, max)\
+  random_seed: 42   # Seed for reproducibility\
+\
+# CPU and memory parameters\
+hardware:\
+  local_cpu_freq: 1.2  # GHz\
+  edge_cpu_freq: 2.5  # GHz\
+  local_energy_cost: 2.5  # Energy per KB (Joules)\
+  edge_energy_cost: 1.0  # Energy per KB (Joules)\
+  memory_local_scaling: 0.0005  # Scaling factor for memory (local)\
+  memory_edge_scaling: 0.0002  # Scaling factor for memory (edge)\
+\
+# Algorithm selection\
+algorithms:\
+  methods: ["Random", "PSO", "GWO", "GA", "SA", "CSO"]\
+  num_runs: 30  # Number of independent runs per algorithm\
+\
+# Output settings\
+output:\
+  save_results: true\
+  save_plots: true\
+  results_dir: "../results/"\
+}
