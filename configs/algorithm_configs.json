@@ -1,28 +1,27 @@
-
-  "PSO": \{\
-    "population_size": 30,\
-    "epochs": 100,\
-    "inertia_weight": 0.5,\
-    "c1": 1.5,\
-    "c2": 1.5\
-  \},\
-  "GWO": \{\
-    "population_size": 30,\
-    "epochs": 100,\
-    "alpha_weight": 2,\
-    "convergence_rate": 0.8\
-  \},\
-  "GA": \{\
-    "population_size": 50,\
-    "epochs": 100,\
-    "crossover_rate": 0.8,\
-    "mutation_rate": 0.05,\
-    "elite_fraction": 0.1\
-  \},\
-  "SA": \{\
-    "epochs": 100,\
-    "initial_temperature": 100.0,\
-    "cooling_rate": 0.95\
-  \}\
-\}\
+{
+  "PSO": {
+    "population_size": 30,
+    "epochs": 100,
+    "inertia_weight": 0.5,
+    "c1": 1.5,
+    "c2": 1.5
+  },
+  "GWO": {
+    "population_size": 30,
+    "epochs": 100,
+    "alpha_weight": 2,
+    "convergence_rate": 0.8
+  },
+  "GA": {
+    "population_size": 50,
+    "epochs": 100,
+    "crossover_rate": 0.8,
+    "mutation_rate": 0.05,
+    "elite_fraction": 0.1
+  },
+  "SA": {
+    "epochs": 100,
+    "initial_temperature": 100.0,
+    "cooling_rate": 0.95
+  }
 }
